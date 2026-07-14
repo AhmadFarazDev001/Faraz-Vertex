@@ -113,3 +113,6 @@ dist
 *.njsproj
 *.sln
 *.sw?
+
+# Local Architecture Rules
+CORE_INSTRUCTIONS.md
