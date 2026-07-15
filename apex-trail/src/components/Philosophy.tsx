@@ -5,8 +5,8 @@ import philosophyWeld from '../assets/philosophy_weld.webp';
 
 export const Philosophy: React.FC = () => {
   return (
-    <section id="about" className="min-h-screen bg-apex-charcoal relative">
-      <div className="max-w-[1600px] mx-auto grid lg:grid-cols-2 items-center gap-16 px-6 md:px-12 lg:px-20 py-24 lg:py-32">
+    <section id="about" className="min-h-[100dvh] bg-apex-charcoal relative">
+      <div className="max-w-[1600px] mx-auto grid lg:grid-cols-2 items-center gap-10 md:gap-16 px-6 md:px-12 lg:px-20 py-16 md:py-24 lg:py-32">
         
         <div className="flex flex-col">
           <FadeIn>
@@ -17,7 +17,7 @@ export const Philosophy: React.FC = () => {
           
           <BlurText 
             text={"Crafted by\nhand, proven\nby gravity."} 
-            className="font-heading italic text-apex-white text-5xl md:text-6xl lg:text-[4.5rem] leading-[0.9] tracking-[-2px]" 
+            className="font-heading italic text-apex-white text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[0.9] tracking-[-2px]" 
           />
 
           <FadeInStaggerGroup className="mt-8 flex flex-col gap-4 max-w-lg">

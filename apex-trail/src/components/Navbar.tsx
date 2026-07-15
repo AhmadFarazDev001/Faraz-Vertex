@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;
@@ -17,7 +19,7 @@ export const Navbar: React.FC = () => {
     }
 
     // Hide if scrolling down and past 150px
-    if (latest > previous && latest > 150) {
+    if (latest > previous && latest > 150 && !isMobileMenuOpen) {
       setHidden(true);
     } else {
       setHidden(false);
@@ -72,18 +74,61 @@ export const Navbar: React.FC = () => {
           ))}
         </div>
 
-        {/* Right: CTA */}
-        <div>
+        {/* Right: CTA & Mobile Toggle */}
+        <div className="flex items-center gap-4">
           <a
             href="#build-yours"
             onClick={(e) => handleScrollTo(e, 'build-yours')}
-            className="gradient-ember rounded-full px-6 py-2.5 text-sm font-body font-semibold text-white inline-flex items-center hover:scale-105 hover:shadow-[0_0_20px_rgba(232,85,42,0.4)] transition-all duration-300"
+            className="gradient-ember rounded-full px-6 py-2.5 text-sm font-body font-semibold text-white hidden sm:inline-flex items-center hover:scale-105 hover:shadow-[0_0_20px_rgba(232,85,42,0.4)] transition-all duration-300"
           >
             Configure Yours
           </a>
+          <button 
+            className="md:hidden text-apex-white p-2 -mr-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
         
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="absolute top-full left-0 right-0 bg-[#0A0A0A]/95 backdrop-blur-xl border-b border-apex-white/10 md:hidden flex flex-col py-6 px-6 gap-6 shadow-2xl"
+          >
+            {['Bikes', 'Build Yours', 'Trails', 'Engineering', 'About'].map((item) => (
+              <a 
+                key={item} 
+                href={`#${item.toLowerCase().replace(' ', '-')}`}
+                onClick={(e) => {
+                  handleScrollTo(e, item.toLowerCase().replace(' ', '-'));
+                  setIsMobileMenuOpen(false);
+                }}
+                className="text-lg font-body font-semibold text-apex-white/80 hover:text-apex-ember"
+              >
+                {item}
+              </a>
+            ))}
+            <a
+              href="#build-yours"
+              onClick={(e) => {
+                handleScrollTo(e, 'build-yours');
+                setIsMobileMenuOpen(false);
+              }}
+              className="gradient-ember rounded-full px-6 py-3 text-center text-sm font-body font-semibold text-white sm:hidden mt-2"
+            >
+              Configure Yours
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 };

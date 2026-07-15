@@ -32,7 +32,7 @@ const testimonials = [
 
 export const Testimonials: React.FC = () => {
   return (
-    <section id="about" className="bg-apex-charcoal py-24 px-6 md:px-12 lg:px-20">
+    <section id="about" className="bg-apex-charcoal py-16 md:py-24 px-6 md:px-12 lg:px-20">
       <div className="max-w-[1600px] mx-auto">
         
         <div className="text-center max-w-3xl mx-auto">
@@ -44,11 +44,11 @@ export const Testimonials: React.FC = () => {
           
           <BlurText 
             text={"What they say\nafter the drop."} 
-            className="font-heading italic text-apex-white text-5xl md:text-6xl lg:text-[4.5rem] leading-[0.9] tracking-[-2px] justify-center" 
+            className="font-heading italic text-apex-white text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[0.9] tracking-[-2px] justify-center" 
           />
         </div>
 
-        <FadeInStaggerGroup className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        <FadeInStaggerGroup className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-16">
           {testimonials.map((t) => (
             <FadeInStaggerItem key={t.id} className="h-full">
               <div className="liquid-glass rounded-[1.5rem] p-8 flex flex-col h-full border border-transparent hover:border-apex-white/10 transition-colors">

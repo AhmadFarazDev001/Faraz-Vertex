@@ -33,14 +33,14 @@ export default function Philosophy() {
   const text = "UNCOMPROMISING CRAFTSMANSHIP. ".repeat(4);
 
   return (
-    <section className="min-h-[50vh] bg-background flex flex-col justify-center overflow-hidden py-24"
+    <section className="w-full bg-background flex flex-col justify-center overflow-hidden py-16 md:py-24"
       style={{
         maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)',
         WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)'
       }}
     >
       <div ref={textRef} className="will-change-transform whitespace-nowrap">
-        <h2 className="text-[10rem] md:text-[15rem] font-display text-muted-foreground opacity-10">
+        <h2 className="text-[6rem] sm:text-[10rem] md:text-[15rem] font-display text-muted-foreground opacity-10">
           {text}
         </h2>
       </div>

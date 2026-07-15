@@ -20,7 +20,7 @@ const trails = [
 
 export const TrailGallery: React.FC = () => {
   return (
-    <section id="trails" className="bg-apex-charcoal py-24 px-6 md:px-12 lg:px-20">
+    <section id="trails" className="bg-apex-charcoal py-16 md:py-24 px-6 md:px-12 lg:px-20">
       
       <div className="text-center max-w-3xl mx-auto">
         <FadeIn>
@@ -31,11 +31,11 @@ export const TrailGallery: React.FC = () => {
         
         <BlurText 
           text={"Tested where\nit counts."} 
-          className="font-heading italic text-apex-white text-5xl md:text-6xl lg:text-[4.5rem] leading-[0.9] tracking-[-2px] justify-center" 
+          className="font-heading italic text-apex-white text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[0.9] tracking-[-2px] justify-center" 
         />
       </div>
 
-      <FadeInStaggerGroup className="mt-16 grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[250px] gap-4 max-w-[1600px] mx-auto">
+      <FadeInStaggerGroup className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 auto-rows-[160px] md:auto-rows-[200px] lg:auto-rows-[250px] gap-4 max-w-[1600px] mx-auto">
         {trails.map((trail) => (
           <FadeInStaggerItem key={trail.id} className={`${trail.span} relative rounded-[1.5rem] overflow-hidden group cursor-pointer`}>
             <img 

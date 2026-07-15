@@ -56,7 +56,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full h-[100dvh] overflow-hidden">
+    <section className="relative w-full h-[100vh] overflow-hidden">
       {/* Background Image */}
       <img
         alt="Hero Background"
@@ -69,16 +69,16 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40 opacity-90 pointer-events-none"></div>
 
       {/* Hero Content */}
-      <div className="absolute bottom-16 left-12 z-10 flex flex-col">
+      <div className="absolute bottom-10 left-6 md:bottom-16 md:left-12 z-10 flex flex-col">
         <h1 className="flex flex-col">
-          <span className="text-[5rem] md:text-[8rem] font-display italic leading-none">
+          <span className="text-[3.5rem] sm:text-[5rem] md:text-[8rem] font-display italic leading-none">
             {/* Wrap "Elegance" in non-italic, but since it's animated char by char, we'll apply it manually */}
             <em className="not-italic text-muted-foreground">
               {renderAnimatedText("Elegance", 0)}
             </em>
             {renderAnimatedText(" in", 0)}
           </span>
-          <span className="text-[5rem] md:text-[8rem] font-display leading-none -mt-6">
+          <span className="text-[3.5rem] sm:text-[5rem] md:text-[8rem] font-display leading-none -mt-2 sm:-mt-6">
             {renderAnimatedText(line2, 1)}
           </span>
         </h1>

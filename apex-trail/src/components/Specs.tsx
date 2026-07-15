@@ -44,7 +44,7 @@ const specsData = [
 
 export const Specs: React.FC = () => {
   return (
-    <section id="engineering" className="bg-apex-black py-24 lg:py-32">
+    <section id="engineering" className="bg-apex-black py-16 md:py-24 lg:py-32">
       <div className="px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto">
         
         <div className="max-w-3xl">
@@ -56,7 +56,7 @@ export const Specs: React.FC = () => {
           
           <BlurText 
             text={"Obsessive\nprecision."} 
-            className="font-heading italic text-apex-white text-5xl md:text-6xl lg:text-[4.5rem] leading-[0.9] tracking-[-2px]" 
+            className="font-heading italic text-apex-white text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[0.9] tracking-[-2px]" 
           />
           
           <FadeIn delay={0.4}>
@@ -68,7 +68,7 @@ export const Specs: React.FC = () => {
 
       </div>
 
-      <div className="mt-16 w-full overflow-hidden">
+      <div className="mt-12 md:mt-16 w-full overflow-hidden">
         <div className="flex gap-6 px-6 md:px-12 lg:px-20 overflow-x-auto snap-x snap-mandatory scrollbar-hidden pb-8">
           <FadeInStaggerGroup className="flex gap-6 min-w-max">
             {specsData.map((spec, idx) => (

@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
   const bgRef = useParallax<HTMLImageElement>(0.1);
 
   return (
-    <section id="hero" className="relative h-[100dvh] w-full overflow-hidden flex flex-col justify-end pb-16 lg:pb-24 px-6 md:px-12 lg:px-16">
+    <section id="hero" className="relative h-[100svh] md:h-[100dvh] w-full overflow-hidden flex flex-col justify-end pb-16 lg:pb-24 px-6 md:px-12 lg:px-16">
       
       <div className="absolute inset-0 z-0 h-[120%] -top-[10%]">
         <img 
@@ -39,7 +39,10 @@ export const Hero: React.FC = () => {
           </span>
         </motion.div>
 
-        <AnimatedHeading text={"Born for\nthe Wild."} />
+        <AnimatedHeading 
+          text={"Born for\nthe Wild."} 
+          className="font-heading italic text-apex-white text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] leading-[0.85] tracking-[-2px] lg:tracking-[-4px]"
+        />
 
         <motion.p 
           initial={{ filter: 'blur(12px)', opacity: 0, y: 30 }}

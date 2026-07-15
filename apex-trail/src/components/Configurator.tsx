@@ -79,7 +79,7 @@ export const Configurator: React.FC = () => {
   };
 
   return (
-    <section id="build-yours" className="min-h-screen bg-apex-black py-24 px-6 md:px-12 lg:px-20 flex flex-col items-center">
+    <section id="build-yours" className="min-h-[100dvh] bg-apex-black py-16 md:py-24 px-6 md:px-12 lg:px-20 flex flex-col items-center">
       
       <div className="text-center max-w-3xl mx-auto">
         <FadeIn>
@@ -90,7 +90,7 @@ export const Configurator: React.FC = () => {
         
         <BlurText 
           text={"Configure.\nCustomize.\nRide."} 
-          className="font-heading italic text-apex-white text-5xl md:text-6xl lg:text-[5rem] leading-[0.85] tracking-[-2px] justify-center" 
+          className="font-heading italic text-apex-white text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] leading-[0.85] tracking-[-2px] justify-center" 
         />
         
         <FadeIn delay={0.4}>
@@ -100,7 +100,7 @@ export const Configurator: React.FC = () => {
         </FadeIn>
       </div>
 
-      <FadeIn delay={0.6} className="w-full max-w-5xl mt-16">
+      <FadeIn delay={0.6} className="w-full max-w-5xl mt-12 md:mt-16">
         <div className="liquid-glass-dark rounded-[2rem] p-8 md:p-12 border border-apex-white/5">
           
           <div className="flex justify-center mb-8">
@@ -109,7 +109,7 @@ export const Configurator: React.FC = () => {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-6 py-2.5 rounded-full text-sm font-body font-medium transition-all duration-300 whitespace-nowrap ${
+                  className={`px-3 md:px-6 py-2.5 rounded-full text-xs md:text-sm font-body font-medium transition-all duration-300 whitespace-nowrap ${
                     activeTab === tab 
                       ? 'gradient-ember text-white shadow-lg' 
                       : 'text-apex-white/60 hover:text-apex-white'

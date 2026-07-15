@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-8 left-1/2 -translate-x-1/2 z-50 transition-transform duration-500 ease-out ${isVisible ? 'translate-y-0' : '-translate-y-[150%]'}`}>
-      <div className="liquid-glass rounded-full px-8 py-4 flex items-center gap-10 text-sm font-body tracking-widest uppercase">
+      <div className="liquid-glass rounded-full px-6 md:px-8 py-3 md:py-4 flex items-center gap-6 md:gap-10 text-xs md:text-sm font-body tracking-widest uppercase overflow-x-auto max-w-[90vw] scrollbar-hide whitespace-nowrap">
         {NAV_LINKS.map(link => (
           <a key={link.label} href={link.href} className="hover:text-white transition-colors duration-300">
             {link.label}

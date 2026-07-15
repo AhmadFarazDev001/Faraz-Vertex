@@ -25,7 +25,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-apex-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-apex-gunmetal);
+  border-radius: 5px;
+  border: 2px solid var(--color-apex-black); /* Creates padding effect */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-apex-ember);
 }
 
 .gradient-ember {

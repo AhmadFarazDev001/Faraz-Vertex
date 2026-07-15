@@ -24,7 +24,7 @@ function App() {
       {loading ? (
         <PageLoader onComplete={() => setLoading(false)} />
       ) : (
-        <div className="bg-apex-black min-h-screen text-apex-white selection:bg-apex-ember/30 font-body">
+        <div className="bg-apex-black min-h-[100dvh] text-apex-white selection:bg-apex-ember/30 font-body overflow-x-hidden w-full relative">
           <Navbar />
           <main>
             <Hero />

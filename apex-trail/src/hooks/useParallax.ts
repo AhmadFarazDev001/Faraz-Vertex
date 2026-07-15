@@ -8,8 +8,12 @@ import { useEffect, useRef } from 'react';
  */
 export function useParallax<T extends HTMLElement>(multiplier: number = 0.1, horizontal: boolean = false) {
   const ref = useRef<T>(null);
-  
   useEffect(() => {
+    // Disable on mobile/touch devices and tablets
+    if (window.matchMedia('(hover: none) and (pointer: coarse)').matches || window.innerWidth < 1024) {
+      return;
+    }
+
     let currentScroll = window.scrollY;
     let targetScroll = window.scrollY;
     let animationFrameId: number;

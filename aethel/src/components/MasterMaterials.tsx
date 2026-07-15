@@ -7,8 +7,8 @@ import { MATERIALS_DATA } from '../lib/constants';
  */
 export default function MasterMaterials() {
   return (
-    <section className="relative min-h-[200vh] w-full bg-background py-24">
-      <div className="max-w-[80vw] mx-auto space-y-[20vh] pb-[20vh]">
+    <section className="relative w-full bg-background py-16 md:py-24">
+      <div className="max-w-[90vw] md:max-w-[80vw] mx-auto space-y-16 md:space-y-[10vh] pb-8 md:pb-0">
         {MATERIALS_DATA.map((material) => (
           <div 
             key={material.id}
@@ -21,10 +21,10 @@ export default function MasterMaterials() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent pointer-events-none transition-opacity duration-1000 group-hover:opacity-70"></div>
             
-            <div className="absolute bottom-24 left-8 text-white/50 font-body text-xs tracking-[0.3em] uppercase z-10">
+            <div className="absolute bottom-16 left-6 md:bottom-24 md:left-8 text-white/50 font-body text-[10px] md:text-xs tracking-[0.3em] uppercase z-10">
               Material — {material.id}
             </div>
-            <h3 className="absolute bottom-8 left-8 text-5xl md:text-7xl font-display text-foreground drop-shadow-2xl z-10">
+            <h3 className="absolute bottom-6 left-6 md:bottom-8 md:left-8 text-4xl sm:text-5xl md:text-7xl font-display text-foreground drop-shadow-2xl z-10">
               {material.name}
             </h3>
           </div>
