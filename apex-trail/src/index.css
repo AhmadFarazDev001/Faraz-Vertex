@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+@import "./styles/liquid-glass.css";
+@import "./styles/grain.css";
+
+@theme {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Outfit', sans-serif;
+  
+  --color-apex-black: #0A0A0A;
+  --color-apex-charcoal: #141414;
+  --color-apex-gunmetal: #1E1E1E;
+  --color-apex-ember: #E8552A;
+  --color-apex-copper: #C27840;
+  --color-apex-sand: #D4C5A9;
+  --color-apex-fog: rgba(255, 255, 255, 0.07);
+  --color-apex-white: #F5F0EB;
+  --color-muted-foreground: rgba(245, 240, 235, 0.6);
+}
+
+body {
+  background-color: var(--color-apex-black);
+  color: var(--color-apex-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.gradient-ember {
+  background: linear-gradient(135deg, var(--color-apex-ember) 0%, var(--color-apex-copper) 100%);
+}
+
+.gradient-trail {
+  background: linear-gradient(180deg, rgba(232,85,42,0.15) 0%, transparent 60%);
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

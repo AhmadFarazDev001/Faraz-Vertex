@@ -16,6 +16,7 @@ This repository serves as a centralized master hub for multiple independent web 
 | Project Directory | Description | Primary Stack |
 | :--- | :--- | :--- |
 | **[`/aethel`](./aethel)** | An ultra-luxury, single-page editorial shoe atelier landing page featuring cinematic film grain and hardware-accelerated split-screen animations. | React, Vite, Tailwind CSS |
+| **[`/apex-trail`](./apex-trail)** | A premium, cinematic, rugged-luxurious custom mountain bike landing page featuring a Liquid-Glass design system and 3D configuration preview. | React, Vite, Tailwind CSS v4, Framer Motion |
 | *(More projects coming soon)* | ... | ... |
 
 ---
