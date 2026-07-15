@@ -6,6 +6,8 @@
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
+### **[🔥 View Live Deployment](https://crest-forge.netlify.app)**
+
 **Crest Forge** is a premium, high-performance landing page and product configurator for a bespoke mountain bike brand. Designed to deliver an immersive, cinematic web experience, the platform utilizes hardware-accelerated animations, custom WebGL-style effects (like film grain and custom cursors), and an incredibly modern "rugged-luxurious" aesthetic.
 
 ## ✨ Key Features

@@ -5,6 +5,8 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
+### **[🔥 View Live Deployment](https://veld-craft.netlify.app)**
+
 **VeldCraft** is an ultra luxury bespoke footwear atelier landing page. Designed to evoke the essence of high end craftsmanship and exclusive luxury, the platform utilizes hardware accelerated animations, raw visual textures (SVG film grain), and a highly editorial, fluid typography system.
 
 ## ✨ Key Features
