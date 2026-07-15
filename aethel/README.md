@@ -1,57 +1,74 @@
-<div align="center">
-  <h1 align="center">A E T H E L</h1>
-  <p align="center">
-    <strong>Ultra-Luxury Bespoke Footwear Atelier</strong>
-  </p>
-  <p align="center">
-    A meticulously crafted single-page web experience showcasing premium, cinematic frontend architecture and fluid motion design.
-  </p>
-</div>
+# AETHEL 👞✨
 
-<hr />
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-## ✦ Overview
+**Aethel** is an ultra luxury bespoke footwear atelier landing page. Designed to evoke the essence of high end craftsmanship and exclusive luxury, the platform utilizes hardware accelerated animations, raw visual textures (SVG film grain), and a highly editorial, fluid typography system.
 
-**Aethel** is an editorial-style landing page designed to evoke the essence of high-end craftsmanship and exclusive luxury. Moving beyond standard web layouts, this project focuses heavily on atmospheric design, utilizing raw visual textures and hardware-accelerated animations to create a deeply immersive brand experience.
+## ✨ Key Features
 
-## 🏛️ Architectural Highlights
+- **Cinematic Atmosphere:** A dark "Obsidian" and "Champagne" aesthetic paired with a custom SVG `<feTurbulence>` noise overlay for a raw film grain texture.
+- **Hardware Accelerated Motion:** The core "Bespoke vs. Collection" split screen reveal (`DualPath`) is driven entirely by hardware accelerated CSS transitions (`transition-[width]`) for buttery smooth 60fps performance without JS layout thrashing.
+- **Fluid Typography System:** Implementation of modern CSS `clamp()` functions to ensure typography natively scales with the viewport, removing the need for rigid media queries.
+- **Centralized Data Architecture:** All static data (materials catalog, navigation links, footer mapping) is fully extracted into a central `constants.ts` file, keeping the React component tree perfectly clean.
+- **Optimized Performance:** Avoids heavy JavaScript physics libraries, relying on Tailwind's native transitions and raw CSS keyframes.
 
-### 1. Cinematic Atmosphere & Texturing
-Instead of relying on heavy image assets for background textures, the application dynamically generates a custom SVG `<feTurbulence>` filter. This `NoiseOverlay` is applied globally using a `mix-blend-overlay`, injecting a raw, cinematic film grain across the entire viewport without impacting rendering performance.
+## 🛠️ Tech Stack
 
-### 2. Hardware-Accelerated Motion (The DualPath)
-The core interactive experience centers around the **Bespoke vs. Collection** split-screen reveal. 
-* **The Challenge:** Traditional JavaScript-based animation loops can cause layout thrashing and dropped frames on mobile devices.
-* **The Solution:** The interaction is driven entirely by hardware-accelerated CSS transitions (`transition-[width]`, `cubic-bezier` timing functions). This delegates the animation workload directly to the GPU, ensuring a buttery smooth 60fps experience even on lower-tier hardware.
+- **Framework:** React 18
+- **Build Tool:** Vite
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + Vanilla CSS (for complex masks)
+- **Icons:** Lucide React
 
-### 3. Centralized Data Layer
-Adhering to enterprise frontend standards, all static content—including navigation routes, footer links, and the extensive materials catalog—has been fully extracted from the UI components. 
-* Located in `src/lib/constants.ts`, this centralized data layer ensures that the React component tree remains clean, semantic, and highly scalable.
+## 🚀 Getting Started
 
-### 4. Fluid Typography Architecture
-To maintain perfect visual hierarchy across all screen sizes (from ultra-wide monitors to mobile displays), the project utilizes modern CSS `clamp()` functions. This creates massive, fluid typography that natively scales with the viewport, eliminating the need for brittle, breakpoint-heavy media queries.
+To run this project locally, follow these steps:
 
-## 🛠️ Technical Stack
-* **Framework:** React 18
-* **Build Engine:** Vite
-* **Language:** TypeScript
-* **Styling Engine:** Tailwind CSS
-* **Design System:** Custom utility classes & modern CSS standards
+### Prerequisites
 
-## 🚀 Running Locally
+Make sure you have Node.js (v18+) and npm installed on your machine.
 
-1. Ensure you are in the `aethel` directory:
+### Installation
+
+1. **Clone the repository:**
    ```bash
+   git clone <your repo url>
    cd aethel
    ```
-2. Install dependencies:
+
+2. **Install dependencies:**
    ```bash
    npm install
    ```
-3. Start the development server:
+
+3. **Start the development server:**
    ```bash
    npm run dev
    ```
 
----
-*Designed and engineered by **Ahmad Faraz** as part of the Faraz-Vertex collection.*
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   *The built files will be located in the `dist` directory.*
+
+## 📂 Project Structure
+
+- `/src/components` - Reusable UI components (Hero, Navbar, DualPath, MasterMaterials, etc.)
+- `/src/lib` - Centralized application constants and utility functions
+- `/public` - Static assets, SVG favicons, and custom generated imagery
+- `/src/index.css` - Global CSS styles including custom fonts and smooth scrolling behavior
+
+## 🎨 Design System
+
+The platform strictly adheres to a tailored editorial color palette:
+- `obsidian`: `#050505`
+- `champagne`: `#F7E7CE`
+- `ash`: `#8c8c8c`
+
+## 👨‍💻 Credits
+
+Designed and Developed by **Ahmad Faraz**.
