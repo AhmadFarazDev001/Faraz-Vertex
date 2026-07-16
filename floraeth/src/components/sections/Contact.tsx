@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
       {/* Decorative Botanical Silhouettes */}
       {/* Left Silhouette */}
       <motion.img
-        src="/src/assets/botanicle_silhouette.webp"
+        src="/images/botanicle_silhouette.webp"
         alt=""
         animate={{ y: [0, -15, 0] }}
         transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
       
       {/* Right Silhouette */}
       <motion.img
-        src="/src/assets/botanicle_silhouette.webp"
+        src="/images/botanicle_silhouette.webp"
         alt=""
         animate={{ y: [0, -15, 0] }}
         transition={{ repeat: Infinity, duration: 8, ease: "easeInOut", delay: 1 }}

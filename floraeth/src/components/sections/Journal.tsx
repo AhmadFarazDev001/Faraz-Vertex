@@ -7,19 +7,19 @@ const articles = [
     category: "Design",
     title: "Why your garden path matters more than you think",
     date: "June 2025",
-    image: "/src/assets/blog_1.webp"
+    image: "/images/blog_1.webp"
   },
   {
     category: "Plants",
     title: "Five flowering vines that will transform any boring wall",
     date: "May 2025",
-    image: "/src/assets/blog_2.webp"
+    image: "/images/blog_2.webp"
   },
   {
     category: "Seasonal",
     title: "Preparing your perennials for a stronger spring",
     date: "April 2025",
-    image: "/src/assets/blog_3.webp"
+    image: "/images/blog_3.webp"
   }
 ];
 

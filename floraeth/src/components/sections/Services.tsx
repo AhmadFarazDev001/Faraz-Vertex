@@ -8,28 +8,28 @@ const services = [
     title: "Custom Garden Design",
     description: "We work with you from vision to blueprint. Whether it is a rooftop terrace or a sprawling estate garden, we design spaces that feel like they belong.",
     icon: Compass,
-    image: "/src/assets/service_design.webp",
+    image: "/images/service_design.webp",
     className: "md:col-span-2 md:row-span-1 min-h-[400px] md:min-h-0",
   },
   {
     title: "Plant Sourcing & Curation",
     description: "We source rare and native plants from growers we trust. Every species is chosen for your climate, soil, and the story you want your garden to tell.",
     icon: Leaf,
-    image: "/src/assets/service_plants.webp",
+    image: "/images/service_plants.webp",
     className: "md:col-span-1 md:row-span-2 min-h-[400px] md:min-h-[600px]",
   },
   {
     title: "Landscape Architecture",
     description: "Stone, water, wood, light. We shape the bones of your outdoor space with materials that age gracefully and structures that invite you to stay.",
     icon: Droplet,
-    image: "/src/assets/service_landscape.webp",
+    image: "/images/service_landscape.webp",
     className: "md:col-span-1 md:row-span-1 min-h-[400px] md:min-h-0",
   },
   {
     title: "Seasonal Maintenance",
     description: "Gardens are living things. Our seasonal care plans keep your space healthy, vibrant, and evolving beautifully year after year.",
     icon: CalendarDays,
-    image: "/src/assets/service_maintenance.webp",
+    image: "/images/service_maintenance.webp",
     className: "md:col-span-1 md:row-span-1 min-h-[400px] md:min-h-0",
   }
 ];

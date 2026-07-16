@@ -4,12 +4,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { STAGGER_CONTAINER, FADE_UP, SCALE_IN } from '../../utils/animations';
 
 const galleryItems = [
-  { name: "The Hawthorne Estate", type: "Private Residence, Connecticut", image: "/src/assets/gallery_1.webp" },
-  { name: "Bloom & Basin", type: "Restaurant Garden, Brooklyn", image: "/src/assets/gallery_2.webp" },
-  { name: "Morning Tide Courtyard", type: "Coastal Villa, Malibu", image: "/src/assets/gallery_3.webp" },
-  { name: "The Fernwood Project", type: "Corporate Campus, Portland", image: "/src/assets/gallery_4.webp" },
-  { name: "Villa Solare", type: "Mediterranean Garden, Napa Valley", image: "/src/assets/gallery_5.webp" },
-  { name: "Wildflower Meadow", type: "Country Estate, Vermont", image: "/src/assets/gallery_6.webp" },
+  { name: "The Hawthorne Estate", type: "Private Residence, Connecticut", image: "/images/gallery_1.webp" },
+  { name: "Bloom & Basin", type: "Restaurant Garden, Brooklyn", image: "/images/gallery_2.webp" },
+  { name: "Morning Tide Courtyard", type: "Coastal Villa, Malibu", image: "/images/gallery_3.webp" },
+  { name: "The Fernwood Project", type: "Corporate Campus, Portland", image: "/images/gallery_4.webp" },
+  { name: "Villa Solare", type: "Mediterranean Garden, Napa Valley", image: "/images/gallery_5.webp" },
+  { name: "Wildflower Meadow", type: "Country Estate, Vermont", image: "/images/gallery_6.webp" },
 ];
 
 const extendedItems = [...galleryItems, ...galleryItems, ...galleryItems, ...galleryItems];

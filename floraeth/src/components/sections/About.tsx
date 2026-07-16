@@ -95,7 +95,7 @@ const About: React.FC = () => {
       {/* Right Column (Parallax Image) */}
       <div className="w-full h-full min-h-[500px] lg:min-h-screen overflow-hidden relative">
         <motion.img
-          src="/src/assets/about_garden.webp"
+          src="/images/about_garden.webp"
           alt="Lush garden path with morning light"
           style={{ y: parallaxY, scale: 1.15 }}
           className="w-full h-full object-cover origin-center"

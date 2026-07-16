@@ -38,7 +38,7 @@ const Testimonials: React.FC = () => {
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/testimonial_bg.webp"
+          src="/images/testimonial_bg.webp"
           alt="Soft-focus garden at dusk"
           className="w-full h-full object-cover"
         />
