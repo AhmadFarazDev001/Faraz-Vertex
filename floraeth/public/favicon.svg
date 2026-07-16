@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a9275" />
+      <stop offset="100%" stop-color="#4B503C" />
+    </linearGradient>
+  </defs>
+  <!-- Elegant minimalist leaf/stem geometry -->
+  <path d="M 50 15 C 20 15, 15 45, 15 75 C 45 75, 50 45, 50 15 Z" fill="url(#leafGrad)" opacity="0.9" />
+  <path d="M 50 90 C 80 90, 85 60, 85 30 C 55 30, 50 60, 50 90 Z" fill="#6B705C" opacity="0.85" />
+</svg>

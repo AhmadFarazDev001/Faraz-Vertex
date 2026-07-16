@@ -17,6 +17,7 @@ This repository serves as a centralized master hub for multiple independent web 
 | :--- | :--- | :--- | :--- |
 | **[`/veldcraft`](./veldcraft)** | An ultra-luxury, single-page editorial shoe atelier landing page featuring cinematic film grain and hardware-accelerated split-screen animations. | React, Vite, Tailwind CSS | [Live Demo](https://veld-craft.netlify.app) |
 | **[`/crest-forge`](./crest-forge)** | A premium, cinematic, rugged-luxurious custom mountain bike landing page featuring a Liquid-Glass design system and 3D configuration preview. | React, Vite, Tailwind CSS v4, Framer Motion | [Live Demo](https://crest-forge.netlify.app) |
+| **[`/floraeth`](./floraeth)** | A premium, fully responsive, single-page landing website for a luxury garden design and floral boutique brand featuring a bespoke dark botanical aesthetic. | React, Vite, Tailwind CSS, Framer Motion | TBD |
 | *(More projects coming soon)* | ... | ... | ... |
 
 ---
